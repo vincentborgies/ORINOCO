@@ -1,0 +1,27 @@
+{
+  "name": "orinoco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "start": "live-server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentborgies/ORINOCO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentborgies/ORINOCO/issues"
+  },
+  "homepage": "https://github.com/vincentborgies/ORINOCO#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
