@@ -1,66 +1,72 @@
-.cart-container{
+.cart-container {
     padding: 150px 20px 100px 20px;
 }
 
-.cart-content{
+.cart-content {
     background: var(--primary-color);
     padding: 20px;
     margin-bottom: 20px;
-    border-radius : 5px
+    border-radius: 5px;
 }
 
-.cart-product-infos{
+.cart-product-infos {
     background: white;
     border: 1px solid #e5e7eb;
 }
 
-.delete-cart{
+.delete-cart {
     justify-content: flex-end;
 }
 
-#delete-cart__button{
+#delete-cart__button {
     text-decoration: none;
     margin-top: 20px;
     text-align: center;
     width: 150px;
-    background: #4338CA ;
+    background: #4338CA;
     color: whitesmoke;
     font-size: 13px;
     font-weight: 500;
     padding: 8px 16px 8px 16px;
     border-radius: 5px;
-    border: 0; 
+    border: 0;
     cursor: pointer;
 }
 
-.confirm-purchase{
+#delete-cart__button:hover {
+    opacity: 0.85;
+}
+
+.confirm-purchase {
     margin-top: 20px;
     justify-content: flex-end;
 }
 
-#confirm-purchase__button{
+#confirm-purchase__button {
     text-decoration: none;
     margin-top: 20px;
     text-align: center;
     width: 150px;
-    background: #4338CA ;
+    background: #4338CA;
     color: whitesmoke;
     font-size: 13px;
     font-weight: 500;
     padding: 8px 16px 8px 16px;
     border-radius: 5px;
+    border: 0;
+    cursor: pointer;
 }
 
-#confirm-purchase__button:hover{
+#confirm-purchase__button:hover {
     opacity: 0.85;
 }
 
-.detail-product{
-    text-align : center;
+.detail-product {
+    text-align: center;
     padding: 8px 0 8px 0;
 }
 
-.input{
+.input {
     border-width: 0;
     border-style: solid;
     border-color: #e5e7eb;
@@ -70,27 +76,26 @@
     border: 1px solid #e5e7eb;
 }
 
-.costumer-infos{
+.costumer-infos {
     margin-bottom: 10px;
 }
 
-.table-products{
+.table-products {
     border-collapse: collapse;
     width: 100%;
 }
 
-.table-products__head{
+.table-products__head {
     background: white;
     border: 1px solid #e5e7eb;
 }
 
-.total-line{
+.total-line {
     background: #F3F4F6;
     border: 1px solid #e5e7eb;
 }
 
-
-.return-home{
+.return-home {
     text-decoration: none;
-    color : #4338CA
+    color: #4338CA
 }

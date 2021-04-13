@@ -1,7 +1,5 @@
 //Définit la nouvelle URL avec l'id du produit choisi
-
 const params = new URLSearchParams(window.location.search);
-console.log(params);
 const id = params.get('id');
 
 //Récupère les données de la nouvelle adresse
@@ -52,26 +50,29 @@ const getProductFromId = async idProduct => {
       </div>`;
 
       //Création d'une fonction foreach pour afficher mes choix de couleurs
-      let choice = document.querySelector('.select-color');
 
-      data.colors.forEach(colors => {
-        let option = document.createElement('option');
-        option.value = colors;
-        option.textContent = colors;
+      const choice = document.querySelector('.select-color');
+
+      data.colors.forEach(color => {
+        const option = document.createElement('option');
+        option.value = color;
+        option.textContent = color;
         choice.appendChild(option);
       });
-      
+
     // création d'un EventListener sur le bouton "ajouter au panier" qui ajoute le produit au local storage
 
       const addToCart = document.querySelector('.add-cart-button');
       addToCart.addEventListener('click', () => {
         const cart = JSON.parse(window.localStorage.getItem('cart')) ?? [];
         const numberOfTeddies = document.querySelector(".quantity-choice").value;
+        const selectedColor = document.querySelector(".select-color").value;
         const objectProduct = {
-          name : data.name,
-          id : idProduct,
-          quantity : numberOfTeddies,
-          price : productPrice
+          name: data.name,
+          id: idProduct,
+          quantity: numberOfTeddies,
+          color: selectedColor,
+          price: productPrice
         };
 
         cart.push(objectProduct);
@@ -85,7 +86,7 @@ const getProductFromId = async idProduct => {
     } else {
       console.error('Retour du serveur : ', response.status);
     }
-  } catch (e                                                                                                                                               ) {
+  } catch (e) {
     console.log(e);
   }
 };

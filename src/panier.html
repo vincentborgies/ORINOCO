@@ -17,7 +17,6 @@
       </a>
       <div class="menu-nav__buttons flex">
           <a class="menu-nav__link"  href="index.html">Accueil</a>
-          <a class="menu-nav__link"  href="#">Articles</a>
           <a  class="menu-nav__link" href="panier.html">Panier<span></span></a>
       </div>
     </header>
@@ -33,6 +32,7 @@
               <th class="detail-product">Produit</th>
               <th class="detail-product">Reférence</th>
               <th class="detail-product">Quantité</th>
+              <th class="detail-product">Couleur</th>
               <th class="detail-product">Prix</th>
               <th class="detail-product">Total</th>
             </tr>
@@ -40,7 +40,7 @@
 
           <tbody id="table-products__body">
               <tr class="total-line">
-                <td colspan="4" class="detail-product">Total</td>
+                <td colspan="5" class="detail-product">Total</td>
                 <td id="totalPrice" class="detail-product">x€</td>
               </tr>
           </tbody>
@@ -54,37 +54,35 @@
       <!-- PURCHASE FORM -->
       <section id="purchase-form-container" class="cart-content">
         <h2 class="purchase-form-title">Passer commande</h2>
-        <form id="purchase-form" action="" method="POST">
+        <form id="purchase-form" action="" method="POST"> 
           <div class="costumer-infos flex column">
-            <label for="firstname" class="label">Prénom</label>
-            <input type="text" name="firstname" id="firstname" class="input" required />
+            <label for="firstName" class="label">Prénom</label>
+            <input type="text" name="firstName" id="firstName" class="input" pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required />
           </div>
           <div class="costumer-infos flex column">
-            <label for="lastname" class="label">Nom</label>
-            <input type="text" name="lastname" id="lastname" class="input" required />
+            <label for="lastName" class="label">Nom</label>
+            <input type="text" name="lastName" id="lastName" class="input" pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required />
           </div>
           <div class="costumer-infos flex column">
             <label for="email" class="label">Adresse e-mail</label>
-            <input type="text" name="email" id="email" class="input" required />
+            <input type="email" name="email" id="email" class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
           </div>
           <div class="costumer-infos flex column">
             <label for="adress" class="label">Adresse</label>
-            <input type="text" name="adress" id="adress" class="input" required />
+            <input type="text" name="adress" id="adress" class="input"pattern="^[0-9]{1,4}[ ,-][ A-Za-zÀ-ÿ0-9-]+$gi " required />
           </div>
           <div class="costumer-infos flex column">
             <label for="zipcode" class="label">Code postal</label>
-            <input type="text" name="zipcode" id="zipcode" class="input" required />
+            <input type="text" name="zipcode" id="zipcode" class="input" pattern="^((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}$" required />
           </div>
           <div class="costumer-infos flex column">
             <label for="city" class="label">Ville</label>
-            <input type="text" name="city" id="city" class="input" required />
+            <input type="text" name="city" id="city" class="input"pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required />
+          </div>
+          <div class="confirm-purchase flex">
+            <input id="confirm-purchase__button" type="submit" value="Procéder au paiement"/>
           </div>
         </form>
-        <div class="confirm-purchase flex">
-          <a id="confirm-purchase__button" href="#">
-            Procéder au paiement
-          </a>
-        </div>
       </section>
       <!-- PURCHASE FORM -->
     </div>

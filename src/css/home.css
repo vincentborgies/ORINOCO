@@ -8,20 +8,6 @@
     justify-content: center;
   }
   
-  .home-banner__button {
-    padding: 20px;
-    font-size: 20px;
-    margin-top: 60px;
-    font-weight: 00px;
-    border-radius: 50px;
-    border: solid 2px;
-    cursor: pointer;
-  }
-  
-  .home-banner__button:hover {
-    background: white;
-  }
-  
   .home-banner__title {
     color: white;
     margin: 0;

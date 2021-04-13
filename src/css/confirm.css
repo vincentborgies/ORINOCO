@@ -1,0 +1,46 @@
+.confirm-page{
+    background: var(--primary-color);
+    padding: 100px 20px 100px 20px;
+    border-radius: 5px;
+    margin: 20px 20px 100px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content : center 
+}
+
+.confirm-page__recap-table{
+    margin: 40px;
+}
+
+.space{
+    padding-top: 150px
+}
+
+.confirm-page__message{
+    
+}
+
+.confirm-page__back-home{
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    width: 150px;
+    background: #4338CA;
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.confirm-page__back-home:hover{
+    opacity: 0.85;
+}
+
+.recap-detail{
+    text-align: center;
+    width: 200px;
+    height: 30px
+}
