@@ -1,12 +1,9 @@
-.header {
+  .menu-nav {
+    align-items: center;
     background: var(--primary-color);
     height: 100px;
     position: fixed;
     width: 100%;
-  }
-
-  .menu-nav {
-    align-items: center;
   }
   
   .menu-nav__buttons {
@@ -37,4 +34,13 @@
   
   .menu-nav__logo:hover {
     opacity: 70%;
+  }
+
+  /* RESPONSIVE */
+
+  @media only screen and (max-width:500px){
+    .menu-nav__logo {
+      block-size: 60px;
+      padding-left: 25px;
+    }
   }

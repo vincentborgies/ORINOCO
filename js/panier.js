@@ -23,8 +23,7 @@ const displayCart = () => {
     const price = parseInt(item.price);
     totalPerProduct = quantity * price + '€';
     displayCart.innerHTML = `
-        <td class="detail-product">${item.name}</td>
-        <td class="detail-product" >${item.id}</td>
+        <td class="detail-product" >${item.name}</td>
         <td class="detail-product">${item.quantity}</td>
         <td class="detail-product">${item.color}</td>
         <td class="detail-product">${item.price} €</td>

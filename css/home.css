@@ -49,3 +49,34 @@
   .redirection-page-produit {
     text-decoration: none;
   }
+
+  /* RESPONSIVE  */
+
+  @media only screen and (max-width: 800px) {
+    .product{
+      flex-direction: column;
+      text-align: justify;
+      align-items:center;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    .product__infos{
+      margin: 0 100px 0 100px
+    }
+
+    .product__image{
+      height: 250px;
+      margin-top: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    .product__image{
+      height: 150px;
+    }
+
+    .product__infos{
+      margin: 0 50px 0 50px;
+    }
+  }

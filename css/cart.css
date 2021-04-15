@@ -99,3 +99,11 @@
     text-decoration: none;
     color: #4338CA
 }
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 500px){
+    .cart-container{
+        font-size :10px;
+    }
+}

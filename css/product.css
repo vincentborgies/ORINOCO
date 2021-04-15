@@ -67,3 +67,33 @@
   .product-page__infos__ref{
     font-size: 10px;
   }
+
+  /* RESPONSIVE */
+
+  @media only screen and (max-width: 1150px){
+    #product-page{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .product-page__infos{
+      margin : 0 0 50px 0; 
+    }
+  }
+
+  @media only screen and (max-width: 580px){
+    .container-product-image{
+      height: 400px;
+      width: 250px;
+    }
+
+    .product-page__infos{
+      height: 400px;
+      width: 250px;
+    }
+
+    .product-page__image{
+      height: 150px;
+      width: 225px
+    }
+  }
