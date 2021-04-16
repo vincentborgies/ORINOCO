@@ -124,7 +124,9 @@ const sendOrder = async () => {
   localStorage.removeItem('cart');
 }
 
-confirmPurchase.addEventListener('submit', e => {
+confirmPurchase.addEventListener('click', e => {
   e.preventDefault();
-  sendOrder();
+  if (document.getElementById('purchase-form').checkValidity()){
+    sendOrder();
+  };
 })
