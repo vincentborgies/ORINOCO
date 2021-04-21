@@ -1,6 +1,6 @@
 const getListOfProducts = async () => {
   try {
-    const response = await fetch('http://localhost:3000/api/teddies');
+    const response = await fetch('https://ab-p5-api.herokuapp.com/api/teddies');
     if (response.ok) {
       const data = await response.json();
       data.forEach(element => {
@@ -29,4 +29,4 @@ const getListOfProducts = async () => {
   }
 };
 
-getListOfProducts(); 
+getListOfProducts();

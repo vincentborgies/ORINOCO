@@ -1,21 +1,22 @@
 :root {
-    --primary-color: #f3e9f1;
-    --secondary-color: #d17f40;
-    --tertiary-color: #261624;
-  }
+  --primary-color: #f3e9f1;
+  --secondary-color: #d17f40;
+  --tertiary-color: #261624;
+}
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    scroll-behavior: smooth;
-  }
-  
-  .flex {
-    display: flex;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
 
-  .column{
-    flex-direction: column;
-  }
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}

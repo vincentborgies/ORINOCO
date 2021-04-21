@@ -56,11 +56,11 @@
         <form id="purchase-form" method="POST"> 
           <div class="costumer-infos flex column">
             <label for="firstName" class="label">Prénom</label>
-            <input type="text" name="firstName" id="firstName" class="input" pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required />
+            <input type="text" name="firstName" id="firstName" class="input" minlength="2" required/>
           </div>
           <div class="costumer-infos flex column">
             <label for="lastName" class="label">Nom</label>
-            <input type="text" name="lastName" id="lastName" class="input" pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required />
+            <input type="text" name="lastName" id="lastName" class="input" minlength="2" required />
           </div>
           <div class="costumer-infos flex column">
             <label for="email" class="label">Adresse e-mail</label>
@@ -76,7 +76,7 @@
           </div>
           <div class="costumer-infos flex column">
             <label for="city" class="label">Ville</label>
-            <input type="text" name="city" id="city" class="input" pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required />
+            <input type="text" name="city" id="city" class="input" pminlength="2" required />
           </div>
           <div class="confirm-purchase flex">
             <input id="confirm-purchase__button" type="submit" value="Procéder au paiement"/>

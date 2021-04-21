@@ -6,7 +6,7 @@ const id = params.get('id');
 
 const getProductFromId = async idProduct => {
   try {
-    let response = await fetch('http://localhost:3000/api/teddies/' + idProduct);
+    let response = await fetch('https://ab-p5-api.herokuapp.com/api/teddies/' + idProduct);
     if (response.ok) {
       const data = await response.json();
       console.log(data);
@@ -60,19 +60,19 @@ const getProductFromId = async idProduct => {
         choice.appendChild(option);
       });
 
-    // création d'un EventListener sur le bouton "ajouter au panier" qui ajoute le produit au local storage
+      // création d'un EventListener sur le bouton "ajouter au panier" qui ajoute le produit au local storage
 
       const addToCart = document.querySelector('.add-cart-button');
       addToCart.addEventListener('click', () => {
         const cart = JSON.parse(window.localStorage.getItem('cart')) ?? [];
-        const numberOfTeddies = document.querySelector(".quantity-choice").value;
-        const selectedColor = document.querySelector(".select-color").value;
+        const numberOfTeddies = document.querySelector('.quantity-choice').value;
+        const selectedColor = document.querySelector('.select-color').value;
         const objectProduct = {
           name: data.name,
           id: idProduct,
           quantity: numberOfTeddies,
           color: selectedColor,
-          price: productPrice
+          price: productPrice,
         };
 
         cart.push(objectProduct);
@@ -82,7 +82,6 @@ const getProductFromId = async idProduct => {
         //alerter l'utilisateur que le produit a bien été ajouté dans le panier
         alert('Ce produit a été ajouté au panier');
       });
-
     } else {
       console.error('Retour du serveur : ', response.status);
     }
@@ -92,4 +91,3 @@ const getProductFromId = async idProduct => {
 };
 
 getProductFromId(id);
-
